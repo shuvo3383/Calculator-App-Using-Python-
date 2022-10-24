@@ -1,0 +1,135 @@
+<Demo>
+    size:root.width,root.height
+    screen1:screen1
+    clear:clear
+    bracket:bracket
+    modulus:modulus
+    div:div
+    sev:sev
+    eight:eight
+    nine:nine
+    four:four
+    mul:mul
+    five:five
+    six:six
+    minus:minus
+    one:one
+    two:two
+    three:three
+    add:add
+    d:d
+    zero:zero
+    point:point
+    equal:equal
+
+    GridLayout:
+        size:root.width,root.height
+        cols:1
+        spacing:2
+        TextInput:
+            multiline:False
+            pos_hint:{'Center_x':0,'center_y':0.3}
+            size_hint:(0,.2)
+            id:screen1
+        GridLayout:
+            cols:4
+            rows:5
+            Button:
+                text:'C'
+                background_color:(150/250,250/250,200/250,250/250)
+                id:clear
+                on_press:root.press()
+            Button:
+                text:'()'
+                id:bracket
+                on_press:root.btn1()
+            Button:
+                text:'%'
+                id:modulus
+                on_press:root.btn_press1()
+            Button:
+                text:'/'
+                id:div
+                on_press:root.btn_press1()
+
+
+            Button:
+                text:'7'
+                id:sev
+                on_press:root.btn_press(7)
+            Button:
+                text:'8'
+                id:eight
+                on_press:root.btn_press(8)
+            Button:
+                text:'9'
+                id:nine
+                on_press:root.btn_press(9)
+            Button:
+                text:'*'
+                id:mul
+                on_press:root.btn_press1()
+
+            Button:
+                text:'4'
+                id:four
+                on_press:root.btn_press(4)
+            Button:
+                text:'5'
+                id:five
+                on_press:root.btn_press(5)
+            Button:
+                text:'6'
+                id:six
+                on_press:root.btn_press(6)
+            Button:
+                text:'-'
+                id:minus
+                on_press:root.btn_press1()
+
+            Button:
+                text:'1'
+                id:one
+                on_press:root.btn_press(1)
+            Button:
+                text:'2'
+                id:two
+                on_press:root.btn_press(2)
+            Button:
+                text:'3'
+                id:three
+                on_press:root.btn_press(3)
+            Button:
+                text:'+'
+                id:add
+                on_press:root.btn_press1()
+
+
+            Button:
+                text:'00'
+                id:d
+                on_press:root.btn_press(00)
+            Button:
+                text:'0'
+                id:zero
+                on_press:root.btn_press(0)
+            Button:
+                text:'.'
+                id:point
+                on_press:root.btn_press1()
+            Button:
+                text:'='
+                id:equal
+                on_press:root.btn_press1()
+
+
+
+
+
+
+
+
+
+
+
+
